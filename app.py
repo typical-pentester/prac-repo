@@ -1,6 +1,15 @@
+def exampleFunction():
+    letters = list(range(65, 75))
+    for index, num in enumerate(letters):
+        print(index, num)
 
-print(10 / 3)
-print(10 // 3)
-x = 2 ** 8
-y = 1 / 8
-print(x // y)
+
+def sortList(givenList):
+    print(sorted(givenList, reverse=False))
+    givenList.sort(reverse=True)
+    print(givenList)
+
+
+exampleFunction()
+sendList = list(range(1, 20))
+sortList(sendList)
